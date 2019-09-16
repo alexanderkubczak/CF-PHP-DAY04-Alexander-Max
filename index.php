@@ -1,51 +1,73 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Aleximil</title>
+	<title></title>
 </head>
 <body>
-	<?php
 
-	class HelloWorldOOP
-	{
-		public function displayMessage()
+
+
+
+
+
+	<?php 
+
+		/**
+		 * 
+		 */
+		class Author
 		{
-			$myMsg = "Hello Allla";
-			print $myMsg;
+			public $id;
+			public $name;
+			public $surname;
+			public $birthDate;
+			
+			function __construct($ida,$firstname,$lastname,$DateofBirth)
+			{
+			$this->id = $ida;
+			$this->name = $firstname;
+			$this->surname = $lastname;
+			$this->birthDate = $DateofBirth;
+
+			}
+
+			public function delete(){
+				$mysqli = new mysqli("localhost","root","","cr11_max_widhalm_biglibrary");
+
+				if ($mysqli->connect_errno) {
+					echo "no f*** connection to our database" .$mysqli->connect_error;
+				}
+
+				$beekesql="DELETE FROM author where authorId = " .$this->id;
+
+				$result = $mysqli->query($beekesql);
+
+			}
+
+
 		}
-	}
-	$myHelloWorldOOP = new HelloWorldOOP();
-	$myHelloWorldOOP->displayMessage();
 
-	  ?>
-	
-            <input type ="text"  name="name"  class ="form-control"  placeholder ="Enter Name"  maxlength ="50"   value = "<?php echo $name ?>"/>
-      
-               <span class = "text-danger"> <?php echo $nameError; ?> </span>
-          
-    
 
-            <input type = "email"   name = "email"   class = "form-control"   placeholder = "Enter Your Email"   maxlength = "40"   value = "<?php echo $email ?>"/>
-    
-               <span class = "text-danger" > <?php   echo  $emailError; ?> </span>
-      
-          
-      
-            
-        
-            <input type = "password"   name = "pass"   class = "form-control"   placeholder = "Enter Password"   maxlength = "15"  />
-            
-               <span class = "text-danger" > <?php   echo  $passError; ?> </span>
-      
-            <hr/>
 
-          
-            <button type = "submit"   class = "btn btn-block btn-primary"   name = "btn-signup" >Sign Up</ button >
-            <hr/>
-          
-            <a href = "index.php" >Sign in Here...</a>
-    
-  
-   </form >
+					$connectiontoDb = new mysqli("localhost","root","","cr11_max_widhalm_biglibrary");
+					$sql = "SELECT * from authors where author_id = 123";
+
+					$result = $connectiontoDb->query($sql) or die(mysqli_error());
+
+					$row = $result->fetch_assoc();
+
+				$author1 = new Author($row["author_id"],$row["name"],$row["surname"],$row["media"], $row["genre"]);
+
+			$author1->delete(); 
+
+			echo "ich war hier";
+
+
+
+
+
+
+	 ?>
+
 </body>
 </html>
