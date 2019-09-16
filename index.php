@@ -1,78 +1,51 @@
-<?php require_once 'actions/db_connect.php'; ?>
-
 <!DOCTYPE html>
 <html>
 <head>
-   <title>cr11_max_widhalm_biglibrary</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-   <style type ="text/css">
-        table {
-           width: 100%;
-            margin: 2vw;
-       }
-       h1 {
-        margin-left: 5vw;
-       }
-        .add {
-          margin-left: 5vw;
-        }
-   </style>
-
+	<title>Aleximil</title>
 </head>
 <body>
-  <h1>Big Library</h1>
-<div class="page-wrapper">
-   <a href= "create.php"><button type="button" class="add">Add new media</button></a>
+	<?php
 
-   <table class="table" border="1" cellspacing= "0" cellpadding="0">
-       <thead>
-           <tr>
-              <th scope="col">ID</th>
-              <th scope="col">ISBN</th>
-              <th scope="col">Title</th>
-              <th scope="col">Author</th>
-              <th scope="col">Type</th>
-              <th scope="col">Cover</th>
-              <th scope="col">Status</th>
-              <th scope="col">Description</th>
-              <th scope="col">Publisher ID</th>
-           </tr>
-       </thead>
-       <tbody>
+	class HelloWorldOOP
+	{
+		public function displayMessage()
+		{
+			$myMsg = "Hello Allla";
+			print $myMsg;
+		}
+	}
+	$myHelloWorldOOP = new HelloWorldOOP();
+	$myHelloWorldOOP->displayMessage();
 
-            <?php
-           $sql = "SELECT * FROM media INNER JOIN authors ON author_id=fk_author_id ORDER BY media_id ASC";
-               $result = $connect->query($sql);
+	  ?>
+	
+            <input type ="text"  name="name"  class ="form-control"  placeholder ="Enter Name"  maxlength ="50"   value = "<?php echo $name ?>"/>
+      
+               <span class = "text-danger"> <?php echo $nameError; ?> </span>
+          
+    
 
-            if($result->num_rows > 0) {
-                while($row = $result->fetch_assoc()) {
-                   echo  "<tr>
-                          <td>" .$row['media_id']."</td>
-                          <td>" .$row['isbn']."</td>
-                          <td>" .$row['title']."</td>
-                          <td>" .$row['author']."</td>
-                          <td>" .$row['type']."</td>
-                          <td><img class='img-thumbnail' src=" .$row['img']." alt='image'/></td>
-                          <td>" .$row['status']."</td>
-                          <td>" .$row['short_disc']."</td>
-                          <td>" .$row['fk_publisher_id']."</td>
-                          <td>
-                          <a href='update.php?id=".$row['media_id']."'><button class='home-manipulate-button' type='button'>Edit</button></a>
-                          <a href='delete.php?id=".$row['media_id']."'><button class='home-manipulate-button' type='button'>Delete</button></a>
-                          <a href='show_media.php?id=".$row['media_id']."'><button class='home-manipulate-button' type='button'>Details</button></a>
-                          </td>
-                          </tr>" ;
-               }
-           } else  {
-               echo  "<tr><td colspan='5'><center>No Data Avaliable</center></td></tr>";
-           }
-            ?>
+            <input type = "email"   name = "email"   class = "form-control"   placeholder = "Enter Your Email"   maxlength = "40"   value = "<?php echo $email ?>"/>
+    
+               <span class = "text-danger" > <?php   echo  $emailError; ?> </span>
+      
+          
+      
+            
+        
+            <input type = "password"   name = "pass"   class = "form-control"   placeholder = "Enter Password"   maxlength = "15"  />
+            
+               <span class = "text-danger" > <?php   echo  $passError; ?> </span>
+      
+            <hr/>
 
-           
-       </tbody>
-   </table>
-</div>
-
+          
+            <button type = "submit"   class = "btn btn-block btn-primary"   name = "btn-signup" >Sign Up</ button >
+            <hr/>
+          
+            <a href = "index.php" >Sign in Here...</a>
+    
+  
+   </form >
 </body>
 </html>
