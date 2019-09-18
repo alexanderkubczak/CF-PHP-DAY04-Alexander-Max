@@ -5,11 +5,6 @@
 </head>
 <body>
 
-
-
-
-
-
 	<?php 
 
 		/**
@@ -48,9 +43,8 @@
 		}
 
 
-
 					$connectiontoDb = new mysqli("localhost","root","","cr11_max_widhalm_biglibrary");
-					$sql = "SELECT * from authors where author_id = 123";
+					$sql = " SELECT * from authors where author_id = 123";
 
 					$result = $connectiontoDb->query($sql) or die(mysqli_error());
 
@@ -61,11 +55,6 @@
 			$author1->delete(); 
 
 			echo "ich war hier";
-
-
-
-
-
 
 	 ?>
 
