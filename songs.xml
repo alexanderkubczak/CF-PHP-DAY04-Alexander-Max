@@ -1,0 +1,125 @@
+
+<?xml version="1.0"?>
+<catalog>
+ <song id="song01">
+    <artist>Culture Beat</artist>
+    <title>Mr. Vain</title>
+    <genre>Techno</genre>
+    <length>5:40</length>
+ </song>
+  <song id="song02">
+    <artist>Dax J</artist>
+    <title>Reign of Terror</title>
+    <genre>Techno</genre>
+    <length>6:22</length>
+ </song>
+  <song id="song03">
+    <artist>Samy Deluxe</artist>
+    <title>Weck mich auf</title>
+    <genre>Deutschrap</genre>
+    <length>4:17</length>
+ </song>
+  <song id="song04">
+    <artist>Enrico Sangiuliano</artist>
+    <title>Symbiosis</title>
+    <genre>Techno</genre>
+    <length>8:53</length>
+ </song>
+  <song id="song05">
+    <artist>Casual Gabberz</artist>
+    <title>Casse de Meurs</title>
+    <genre>Gabber</genre>
+    <length>3:50</length>
+ </song>
+  <song id="song06">
+    <artist>MC Xander</artist>
+    <title>Higher Nature</title>
+    <genre>Drum n Bass</genre>
+    <length>4:20</length>
+ </song>
+  <song id="song07">
+    <artist>Kilez More</artist>
+    <title>Wir könnten</title>
+    <genre>Rap</genre>
+    <length>4:50</length>
+ </song>
+  <song id="song08">
+    <artist>Astrix</artist>
+    <title>Deep Jungle Walk</title>
+    <genre>Goa</genre>
+    <length>7:30</length>
+ </song>
+  <song id="song09">
+    <artist>Haftbefehl</artist>
+    <title>Chabos wissen wer der Babo ist</title>
+    <genre>Deutschrap</genre>
+    <length>3:52</length>
+ </song>
+  <song id="song10">
+    <artist>Fazlija</artist>
+    <title>Malo viski malo coca cola</title>
+    <genre>Party</genre>
+    <length>Country/Party</length>
+ </song>
+  <song id="song11">
+    <artist>Haftbefehl</artist>
+    <title>069</title>
+    <genre>Deutschrap</genre>
+    <length>3:31</length>
+ </song>
+  <song id="song12">
+    <artist>Celo und Abdi</artist>
+    <title>Mietwagensound</title>
+    <genre>Deutschrap</genre>
+    <length>2:56</length>
+ </song>
+  <song id="song13">
+    <artist>Bladee</artist>
+    <title>Missing Person</title>
+    <genre>Alternative/Experimental</genre>
+    <length>3:21</length>
+ </song>
+  <song id="song14">
+    <artist>Yung Lean</artist>
+    <title>Afghanistan</title>
+    <genre>Cloud-Rap</genre>
+    <length>2:50</length>
+ </song>
+  <song id="song15">
+    <artist>Ecco2k</artist>
+    <title>GT-R</title>
+    <genre>Alternative/Experimental</genre>
+    <length>2:57</length>
+ </song>
+  <song id="song16">
+    <artist>Playboi Carti und Lil Uzi Vert</artist>
+    <title>Shoota</title>
+    <genre>Trap</genre>
+    <length>2:33</length>
+ </song>
+  <song id="song17">
+    <artist>Chief Keef</artist>
+    <title>Faneto</title>
+    <genre>Drill</genre>
+    <length>3:26</length>
+ </song>
+  <song id="song18">
+    <artist>Chief Keef</artist>
+    <title>Love Sosa</title>
+    <genre>Drill</genre>
+    <length>3:39</length>
+ </song>
+  <song id="song19">
+    <artist>Rinkadink</artist>
+    <title>Fear is the mindkiller</title>
+    <genre>Goa</genre>
+    <length>6:53</length>
+ </song>
+  <song id="song20">
+    <artist>Bru-C</artist>
+    <title>Inhaler</title>
+    <genre>Drum n Bass</genre>
+    <length>4:10</length>
+ </song>
+
+</catalog>
