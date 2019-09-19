@@ -31,10 +31,10 @@
     <span id="availability"></span>
     <br /><br />
     <button type="button" name="register" class="btn btn-info" id="register" disabled>Register</button>
-    <br />
+    <br/>
    </div>  
-   <br />  
-   <br />  
+   <br/>  
+   <br/>  
   </div>
   <script>  
  $(document).ready(function(){  
